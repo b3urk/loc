@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Location
+{% endblock %}
+
+{% block body %}
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Ajoute Vehicule</a></li>
+            <li><a href="">Modif Vehicule</a></li>
+            <li><a href="">Efface Vehicule</a></li>
+            <li><a href="{{path('app_register')}}">Inscription</a></li>
+            <li><a href="{{path('app_login')}}">Login</a></li>
+            <li><a href="{{path('app_logout')}}">Logout</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+        
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif
+}
+
+/* styler la navbar */
+
+.navigation ul {
+    display: flex;
+    height: 60px;
+    background-color: #f1f1f1;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.navigation ul li a:hover {
+    background-color:#555;
+    color: white;
+}
+
+/* styler un tableau */
+
+.table {
+    width: 80%;
+    margin: auto;
+
+}
+
+thead {
+    background-color: #25C8E8;
+    color: white;
+}
+
+
+td {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    /* vertical-align: middle; */
+}
+
+tr:hover {
+    background-color: coral;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* styler les formulaires */
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+form > div {
+    margin: 10px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1.5px solid grey;
+    border-radius: 4px;
+}

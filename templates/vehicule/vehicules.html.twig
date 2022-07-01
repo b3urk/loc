@@ -1,0 +1,29 @@
+{% extends "layout.html.twig" %}
+ {% block content %}
+
+     <main class="container">
+     <table class="table">
+         <thead>
+             <tr>
+                 <th>titre</th>
+                 <th>marque</th>
+                 <th>model</th>
+                 <th>description</th>
+                 <th>prix journalier</th>
+             </tr>
+         </thead>
+         <tbody> 
+             {% for vehicule in vehicules %}
+                 <tr>
+                     <td>{{vehicule.titre}}</td>
+                     <td>{{vehicule.marque}}</td>
+                     <td>{{vehicule.model}}</td>
+                     <td>{{vehicule.description}}</td>
+                     <td>{{vehicule.prixJournalier}}</td>
+                     <td></td>
+                 </tr>
+             {% endfor %}
+         </tbody>
+     </table>
+     </main>
+ {% endblock %}
